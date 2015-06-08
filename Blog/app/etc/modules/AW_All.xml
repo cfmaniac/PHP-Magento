@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SourceryWeb_All>
+            <active>true</active>
+            <codePool>local</codePool>
+        </SourceryWeb_All>
+    </modules>
+</config>

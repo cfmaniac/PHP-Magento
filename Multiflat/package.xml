@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.8.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+ <name>Multirate_Shipping</name>
+ <channel>connect.magentocommerce.com/community</channel>
+ <summary>Adds the Ability to Designate Multiple Shipping Rates and Methods into the Magento E-Commerce Platform.</summary>
+ <description></description>
+ <lead>
+  <name>James Harvey</name>
+  <user>demonangel</user>
+  <email>jchharvey@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-06-21</date>
+ <time>20:13:36</time>
+ <version>
+  <release>1.1.0</release>
+  <api>1.1.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+ <notes>
+ </notes>
+ <contents>
+  <dir name="/">
+   <dir name="frontend">
+    <dir name="default">
+     <dir name="multirate_default">
+      <dir name="template">
+       <dir name="checkout">
+        <dir name="cart">
+         <file md5sum="7126e9b9d7200cd53b98b5cc64d2ba93" name="shipping.phtml" role="magedesign" />
+        </dir> <!-- /frontend/default/multirate_default/template/checkout/cart -->
+        <dir name="onepage">
+         <dir name="shipping_method">
+          <file md5sum="4e3964b35abc2237a0f7178e6f0591cf" name="available.phtml" role="magedesign" />
+         </dir> <!-- /frontend/default/multirate_default/template/checkout/onepage/shipping_method -->
+        </dir> <!-- /frontend/default/multirate_default/template/checkout/onepage -->
+       </dir> <!-- /frontend/default/multirate_default/template/checkout -->
+      </dir> <!-- /frontend/default/multirate_default/template -->
+     </dir> <!-- /frontend/default/multirate_default -->
+    </dir> <!-- /frontend/default -->
+   </dir> <!-- /frontend -->
+   <dir name="Mage">
+    <dir name="Sales">
+     <dir name="Model">
+      <dir name="Quote">
+       <dir name="Address">
+        <file md5sum="5bf0e572af50b5af6ec8d033ac3ae651" name="Rate.php" role="magecommunity" />
+       </dir> <!-- /Mage/Sales/Model/Quote/Address -->
+      </dir> <!-- /Mage/Sales/Model/Quote -->
+     </dir> <!-- /Mage/Sales/Model -->
+    </dir> <!-- /Mage/Sales -->
+   </dir> <!-- /Mage -->
+   <dir name="Minerva">
+    <dir name="Sales">
+     <dir name="Model">
+      <dir name="Quote">
+       <dir name="Address">
+        <file md5sum="55207952d3db3f461551abe507379ac4" name="Rate.php" role="magecommunity" />
+       </dir> <!-- /Minerva/Sales/Model/Quote/Address -->
+      </dir> <!-- /Minerva/Sales/Model/Quote -->
+     </dir> <!-- /Minerva/Sales/Model -->
+    </dir> <!-- /Minerva/Sales -->
+    <dir name="Shipping">
+     <dir name="etc">
+      <file md5sum="f557c7f4205f2504aa419f257f5354c2" name="config.xml" role="magecommunity" />
+      <file md5sum="80fc6fa506e8791ec2fcecb06a845a60" name="system.xml" role="magecommunity" />
+     </dir> <!-- /Minerva/Shipping/etc -->
+     <dir name="Model">
+      <dir name="Carrier">
+       <file md5sum="8c23020292d2ffd49df983ba94ec6b2d" name="Multiflat.php" role="magecommunity" />
+      </dir> <!-- /Minerva/Shipping/Model/Carrier -->
+     </dir> <!-- /Minerva/Shipping/Model -->
+    </dir> <!-- /Minerva/Shipping -->
+   </dir> <!-- /Minerva -->
+   <dir name="modules">
+    <file md5sum="8d480a535a58a0035fe0c964077a1a97" name="Multirate_Shipping.xml" role="mageetc" />
+   </dir> <!-- /modules -->
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+    <max>6.0.0</max>
+   </php>
+   <pearinstaller>
+    <min>1.6.2</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease />
+</package>

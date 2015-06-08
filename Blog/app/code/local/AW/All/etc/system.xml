@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <SourceryWeball translate="label" module="SourceryWeball">
+            <label>aheadWorks Extensions</label>
+            <sort_order>300</sort_order>
+        </SourceryWeball>
+    </tabs>
+	<sections>
+		<SourceryWeball translate="label" module="SourceryWeball">
+			<label>Info</label>
+			<tab>SourceryWeball</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>99999</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+                <extensions translate="label">
+                    <label>Installed aheadWorks Extensions</label>
+                    <frontend_type>text</frontend_type>
+                    <frontend_model>SourceryWeball/system_config_form_fieldset_SourceryWeball_extensions</frontend_model>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </extensions>
+				<feed>
+					<label>Notifications</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>60</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enabled translate="label">
+							<label>Enable </label>
+							<comment>Will check for aheadWorks extensions updates</comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>90</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+						</enabled>		
+					</fields>	
+				</feed>		
+			</groups>
+		</SourceryWeball>
+	</sections>
+</config>

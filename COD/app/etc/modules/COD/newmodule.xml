@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Sourcery Web Development
+*
+* @title	  Magento -> Custom Payment Module for Cash On Delivery
+* @category   Mage
+* @package    Mage_Local
+* @author	  James Harvey
+* @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config>
+<modules>
+<!-- declare Mage_COD module -->
+<mage_COD>
+<!-- this is an active module -->
+<active>true</active>
+<!-- this module will be located in app/code/local code pool -->
+<codePool>local</codePool>
+<!-- specify dependencies for correct module loading order -->
+<depends>
+<mage_Payment />
+</depends>
+<!-- declare module's version information for database updates -->
+<version>0.1.0</version>
+</mage_COD>
+</modules>
+</config>

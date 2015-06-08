@@ -1,2 +1,2 @@
-# PHP-Magento
-Magento Mods I've Developed
+# Magento-Mods
+Magento Modifications and Add-Ons

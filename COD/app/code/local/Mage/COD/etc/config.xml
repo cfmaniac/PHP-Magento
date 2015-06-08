@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Sourcery Web
+*
+* @title	  Magento -> Custom Payment Module for Cash On Delivery
+* @category   Mage
+* @package    Mage_Local
+* @author	  James C. Harvey
+* @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+
+-->
+
+<config>
+<global>
+<!-- declare model group for new module -->
+<models>
+<!-- model group alias to be used in Mage::getModel('COD/...') -->
+<COD>
+<!-- base class name for the model group -->
+<class>Mage_COD_Model</class>
+</COD>
+</models>
+
+<!-- declare resource setup for new module -->
+<resources>
+<!-- resource identifier -->
+<COD_setup>
+<!-- specify that this resource is a setup resource and used for upgrades -->
+<setup>
+<!-- which module to look for install/upgrade files in -->
+<module>Mage_COD</module>
+</setup>
+<!-- specify database connection for this resource -->
+<connection>
+<!-- do not create new connection, use predefined core setup connection -->
+<use>core_setup</use>
+</connection>
+</COD_setup>
+<COD_write>
+<use>core_write</use>
+</COD_write>
+<COD_read>
+<use>core_read</use>
+</COD_read>
+</resources>
+</global>
+
+<!-- declare default configuration values for this module -->
+<default>
+<!-- 'payment' configuration section (tab) -->
+<payment>
+<!-- 'COD' configuration group (fieldset) -->
+<COD>
+<!-- by default this payment method is inactive -->
+<active>1</active>
+<!-- model to handle logic for this payment method -->
+<model>COD/paymentMethod</model>
+<!-- order status for new orders paid by this payment method -->
+<order_status>1</order_status>
+<!-- default title for payment checkout page and order view page -->
+<title>Cash On Delivery</title>
+</COD>
+</payment>
+</default>
+</config>
